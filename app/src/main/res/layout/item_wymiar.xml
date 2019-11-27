@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewWaga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewData"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Waga:" />
+
+        <TextView
+            android:id="@+id/waga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewData"
+            android:layout_toRightOf="@+id/textViewWaga"
+            android:layout_alignBaseline="@+id/textViewWaga"
+            android:text="Waga"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:id="@+id/textViewWzrost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/waga"
+            android:layout_alignBaseline="@+id/waga"
+            android:text="Wzrost:"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/wzrost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textViewWzrost"
+            android:layout_alignBaseline="@+id/textViewWzrost"
+            android:text="wzrost"
+            />
+
+        <TextView
+            android:id="@+id/textViewBiceps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewWaga"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:text="Biceps:"
+            />
+
+        <TextView
+            android:id="@+id/biceps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textViewBiceps"
+            android:layout_alignBaseline="@id/textViewBiceps"
+            android:layout_marginRight="30dp"
+            android:text="biceps"/>
+
+        <TextView
+            android:id="@+id/textViewKlatka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/biceps"
+            android:layout_alignBaseline="@id/biceps"
+            android:layout_marginRight="5dp"
+            android:text="Klatka:"/>
+
+        <TextView
+            android:id="@+id/klatka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textViewKlatka"
+            android:layout_alignBaseline="@+id/textViewKlatka"
+            android:text="klatka"/>
+
+        <Button
+            android:id="@+id/buttonUsunWymiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/klatka"
+            android:layout_below="@+id/textViewData"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:text="Usuń"
+            />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

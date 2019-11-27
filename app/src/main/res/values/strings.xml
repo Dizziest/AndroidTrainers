@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Treneiro</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="ip">http://192.168.3.103/AndroidTrening/</string>
+</resources>

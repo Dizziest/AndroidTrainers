@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_item_trener"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewImie_trenera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imie i nazwisko"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewLogin_trenera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textViewImie_trenera"/>
+
+        <TextView
+            android:id="@+id/textViewEmail_Trenera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewLogin_trenera"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Email" />
+
+        <Button
+            android:id="@+id/ButtonPoprosTrenera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wyślij prośbę"
+            android:layout_below="@+id/textViewLogin_trenera"
+            android:layout_alignParentRight="true"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/textViewDoswiadczenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEmail_Trenera"
+            android:text="Doświadczenie: "
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/doswiadczenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textViewDoswiadczenie"
+            android:layout_alignBaseline="@+id/textViewDoswiadczenie"
+            android:text="doświadzczenie"
+            android:layout_marginRight="5dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView_nazwaCwiczenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cwiczenie"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_liczbaSerii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_nazwaCwiczenia"
+            android:text="Serie: "
+            />
+
+        <TextView
+            android:id="@+id/textView_liczbaPowtorzen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView_liczbaSerii"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBaseline="@id/textView_liczbaSerii"
+            android:text="Powtorzenia: "/>
+
+        <TextView
+            android:id="@+id/textView_Obciazenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_liczbaPowtorzen"
+            android:layout_toRightOf="@id/textView_liczbaPowtorzen"
+            android:layout_marginLeft="30dp"
+            android:text="Obciazenie: "/>
+
+        <TextView
+            android:id="@+id/textViewOpis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_liczbaSerii"
+            android:text="Opis: "/>
+
+        <TextView
+            android:id="@+id/textView_opisCwiczenia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textViewOpis"
+            android:layout_below="@id/textView_liczbaPowtorzen"
+            android:layout_marginLeft="5dp"
+            android:text="OPIS"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
